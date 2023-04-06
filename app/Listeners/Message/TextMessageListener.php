@@ -40,6 +40,10 @@ class TextMessageListener
 
         $content = Arr::get($chat, 'choices.0.message.content');
 
+        if (blank($content)) {
+            return;
+        }
+
         $response = Bot::reply(token: $token)
                        ->text($content);
 
