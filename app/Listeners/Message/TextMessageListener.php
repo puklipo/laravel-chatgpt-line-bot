@@ -36,6 +36,7 @@ class TextMessageListener
 
         $chat = OpenAI::chat()->create([
             'model' => 'gpt-3.5-turbo',
+            'temperature' => 0.7,
             'max_tokens' => 1000,
             'messages' => [
                 ['role' => 'user', 'content' => $text],
