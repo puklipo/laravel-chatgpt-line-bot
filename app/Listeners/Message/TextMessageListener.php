@@ -15,8 +15,6 @@ class TextMessageListener
 {
     /**
      * Create the event listener.
-     *
-     * @return void
      */
     public function __construct()
     {
@@ -25,9 +23,6 @@ class TextMessageListener
 
     /**
      * Handle the event.
-     *
-     * @param  TextMessage  $event
-     * @return void
      */
     public function handle(TextMessage $event): void
     {
