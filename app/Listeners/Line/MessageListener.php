@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Listeners\Line;
@@ -29,7 +30,7 @@ class MessageListener
     /**
      * Handle the event.
      *
-     * @param MessageEvent $event
+     * @param  MessageEvent  $event
      * @return void
      *
      * @throws ApiException
